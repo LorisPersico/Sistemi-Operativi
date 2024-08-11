@@ -1,5 +1,6 @@
 Progetto SO 2023/24 Reazione a catena
-Descrizione<a name="_page2_x56.69_y251.43"></a> del progetto: versione minima (voto max 24 su 30)
+
+Descrizione
 
 Si intende simulare una reazione a catena. A tal fine sono presenti i seguenti processi:
 
@@ -66,19 +67,6 @@ Il gruppo di studenti deve produrre configurazioni che siano in grado di generar
 
 Al termine della simulazione, l’output del programma deve riportare anche la causa di terminazione.
 
-6  Descrizione<a name="_page3_x56.69_y607.45"></a> del progetto: versione “normal” (max 30)
-
-Nella versione completa del progetto, `e presente anche un processo inibitore che controlla reazione attraverso i seguenti due meccanismi:
-
-- assorbe parte della quantit`a di energia prodotta dalla scissione dell’atomo diminuendo la quantit`a di energia che viene liberata
-- limita il numero di scissioni agendo sull’operazione di scissione rendendola probabilistica (ad esempio decidendo se la scissione debba avvenire o meno oppure trasformando in scoria uno degli atomi prodotti dopo la scissione)
-
-Il meccanismo di assorbimento e quello di limitazione delle scissioni sono scelti dal programmatore e devono essere basati su qualche criterio adattivo.
-
-La presenza o meno del processo inibitore deve poter essere scelta a run-time, all’inizio della simulazione. Nel caso in cui il processo inibitore sia attivo, ci si aspetta che la terminazione per “explode” e “meltdown” non avvenga.
-
-Inoltre, l’utente deve poter fermare (e far ripartire) il processo inibitore piu` volte da terminale attraverso un meccanismo a scelta del programmatore.
-
 7  Configurazione
 
 <a name="_page4_x56.69_y171.56"></a>Tutti i parametri di configurazione sono letti a tempo di esecuzione, da file o da variabili di ambiente. Quindi, un cambiamento dei parametri non deve determinare una nuova compilazione dei sorgenti (non `e consentito inserire i parametri uno alla volta da terminale una volta avviata la simulazione).
@@ -96,7 +84,7 @@ Ogni secondo il sistema deve produrre una stampa in cui sono elencati:
 - (per la versione “normal”) log delle operazioni di bilanciamento condotte dal processo inibitore .
 9  Requisiti<a name="_page4_x56.69_y441.54"></a> implementativi
 
-Il progetto (sia in versione “minimal” che “normal”) deve
+Il progetto deve
 
 - evitare l’attesa attiva
 - utilizzare almeno memoria condivisa, semafori e un meccanismo di comunicazione fra processi a scelta fra code di messaggi o pipe,
